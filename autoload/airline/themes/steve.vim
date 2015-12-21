@@ -20,7 +20,8 @@ function! g:airline#themes#steve#refresh() abort
                 \ g:airline#themes#steve#palette.normal.airline_warning
 
     "Insert
-    let s:I1 = g:airline#themes#get_highlight('StatusLine')
+    let s:I1 = g:airline#themes#get_highlight2(['Operator','bg'],
+                \ ['Operator', 'fg'], 'bold')
     let s:I2 = s:N2
     let s:I3 = s:N3
     let g:airline#themes#steve#palette.insert =
