@@ -1,9 +1,9 @@
 " steve vim-airline theme
 let g:airline#themes#steve#palette = {}
 
-function! g:airline#themes#steve#refresh() abort
-    "Normal
-    let s:N1 = g:airline#themes#get_highlight2(['String', 'bg'],
+function! airline#themes#steve#refresh() abort
+    " Normal
+    let s:N1 = g:airline#themes#get_highlight2(['CursorLine', 'bg'],
                 \ ['String', 'fg'], 'bold')
     let s:N2 = g:airline#themes#get_highlight('CursorLine')
     let s:N3 = g:airline#themes#get_highlight('PMenu')
@@ -18,8 +18,8 @@ function! g:airline#themes#steve#refresh() abort
     let g:airline#themes#steve#palette.normal_modified.airline_warning =
                 \ g:airline#themes#steve#palette.normal.airline_warning
 
-    "Insert
-    let s:I1 = g:airline#themes#get_highlight2(['Operator','bg'],
+    " Insert
+    let s:I1 = g:airline#themes#get_highlight2(['CursorLine','bg'],
                 \ ['Operator', 'fg'], 'bold')
     let s:I2 = s:N2
     let s:I3 = s:N3
@@ -32,7 +32,7 @@ function! g:airline#themes#steve#refresh() abort
     let g:airline#themes#steve#palette.insert_modified.airline_warning =
                 \ g:airline#themes#steve#palette.normal.airline_warning
 
-    "Replace
+    " Replace
     let s:R1 = g:airline#themes#get_highlight('WildMenu', 'bold')
     let s:R2 = s:N2
     let s:R3 = s:N3
@@ -45,8 +45,8 @@ function! g:airline#themes#steve#refresh() abort
     let g:airline#themes#steve#palette.replace_modified.airline_warning =
                 \ g:airline#themes#steve#palette.normal.airline_warning
 
-    "Visual
-    let s:V1 = g:airline#themes#get_highlight2(['TabLineSel', 'bg'],
+    " Visual
+    let s:V1 = g:airline#themes#get_highlight2(['CursorLine', 'bg'],
                 \ ['DiffDelete', 'bg'], 'bold')
     let s:V2 = s:N2
     let s:V3 = s:N3
@@ -59,7 +59,7 @@ function! g:airline#themes#steve#refresh() abort
     let g:airline#themes#steve#palette.visual_modified.airline_warning =
                 \ g:airline#themes#steve#palette.normal.airline_warning
 
-    "Inactive
+    " Inactive
     let s:IA1 = [ '#4E4E4E' , '#1C1C1C' , 239 , 234 , '' ]
     let s:IA2 = [ '#4E4E4E' , '#262626' , 239 , 235 , '' ]
     let s:IA3 = [ '#4E4E4E' , '#303030' , 239 , 236 , '' ]
@@ -68,12 +68,12 @@ function! g:airline#themes#steve#refresh() abort
     let g:airline#themes#steve#palette.inactive_modified =
                 \ g:airline#themes#steve#palette.inactive
 
-    "Accents
+    " Accents
     let s:A1 =  g:airline#themes#get_highlight('Error', 'bold')
     let g:airline#themes#steve#palette.accents =
                 \ g:airline#themes#generate_color_map(s:A1, s:A1, s:A1)
 
-    "Tabline
+    " Tabline
     let g:airline#themes#steve#palette.tabline = {
                 \ 'airline_tabtype': s:N1,
                 \ 'airline_tabsel': s:N1,
@@ -85,4 +85,4 @@ function! g:airline#themes#steve#refresh() abort
 
 endfunction
 
-call g:airline#themes#steve#refresh()
+call airline#themes#steve#refresh()
