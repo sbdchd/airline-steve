@@ -1,8 +1,13 @@
 # airline-steve
 
-A theme for [vim-airline](https://github.com/bling/vim-airline).
+A theme for [vim-airline](https://github.com/vim-airline/vim-airline).
 
-This is based off of the [hybrid](https://github.com/bling/vim-airline/blob/master/autoload/airline/themes/hybrid.vim), [jellybeans](https://github.com/bling/vim-airline/blob/master/autoload/airline/themes/jellybeans.vim), and [lucius](https://github.com/bling/vim-airline/blob/master/autoload/airline/themes/lucius.vim) themes.
+This is based off of the
+[hybrid](https://github.com/vim-airline/vim-airline-themes/blob/master/autoload/airline/themes/hybrid.vim),
+[jellybeans](https://github.com/vim-airline/vim-airline-themes/blob/master/autoload/airline/themes/jellybeans.vim),
+and
+[lucius](https://github.com/vim-airline/vim-airline-themes/blob/master/autoload/airline/themes/lucius.vim)
+themes.
 
 It should ideally be paired with the [hybrid](https://github.com/w0ng/vim-hybrid) color scheme.
 
